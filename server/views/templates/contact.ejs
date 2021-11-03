@@ -1,0 +1,75 @@
+<!--
+  Author: Mark Randall
+  Date: September 24th, 2021
+  COMP229 Web App Development
+  Fall Semester
+-->
+
+<%- include ../partials/header.ejs %>
+
+  
+<%- include ../partials/main_nav.ejs %>
+  
+<%- include ../partials/title.ejs %>
+
+<!-- Contact page content -->
+<!-- Button trigger modal -->
+
+<div class="container">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    My Contact Details
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">How To Reach Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Email at:  <a href="mailto:mranda10@my.centennialcollege.ca">mranda10@my.centennialcollege.ca</a>
+          <br><br>LinkedIn:  <a href="https://www.linkedin.com/in/M-Randall/" alt="LinkedIn">Mark Randall</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+<br><br>
+  <form action="/" method="get">
+    <p>    Reach me above or get in touch by filling out the form below!</p>
+      <div class="input-group">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone Number">
+        <label for="floatingPassword">Phone Number</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+        <label for="floatingTextarea2">Comments</label>
+      </div>
+      <br>
+      <input type="submit" value="Confirm and Send" class="button">
+      <input type="reset" value="Clear Form" class="button">
+    </form>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>

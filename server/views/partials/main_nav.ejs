@@ -1,0 +1,85 @@
+<!--
+  Author: Mark Randall
+  Date: September 24th, 2021
+  COMP229 Web App Development
+  Fall Semester
+-->
+
+<!-- Main Navigation -->  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="/Assets/images/logoGood.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <% if (title == 'Home') { %>
+          <li class="nav-item"></li>
+            <a class="nav-link active" aria-current="page" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home</a>
+          <% } else { %>              
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home</a>
+          <% } %>            
+          </li>
+          
+          <% if (title == 'About') { %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about"><i class="fas fa-lg fa-info-circle"></i> About</a>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about"><i class="fas fa-lg fa-info-circle"></i> About</a>
+          <% } %>
+          </li>
+          
+          <% if (title == 'Projects') { %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/projects"><i class="fas fa-project-diagram"></i> Projects</a>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/projects"><i class="fas fa-project-diagram"></i> Projects</a>
+          <% } %>
+          </li>
+          
+          <% if (title == 'Services') { %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/services"><i class="far fa-lg fa-money-bill-alt"></i> Services</a>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/services"><i class="far fa-lg fa-money-bill-alt"></i> Services</a>
+          <% } %>
+          </li>
+
+          <% if (title == 'Contact List') { %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact-list"><i class="far fa-lg fa-address-card"></i> Business</a>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact-list"><i class="far fa-lg fa-address-card"></i> Business</a>
+          <% } %>
+          </li>
+
+          <% if (title == 'Contact') { %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact"><i class="fas fa-lg fa-mobile-alt"></i> Contact Me</a>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact"><i class="fas fa-lg fa-mobile-alt"></i> Contact Me</a>
+          <% } %>
+          </li>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
+            <li class="nav-item ps-5"><a href="/logout" class="nav-link">
+              <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+            <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+          <% } else { %>
+            <li class="nav-item ps-5"><a href="/login" class="nav-link">
+              <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+          <% } %> 
+          </ul>         
+
+      </div>
+    </div>
+  </nav>

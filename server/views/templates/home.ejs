@@ -1,0 +1,59 @@
+<!--
+  Author: Mark Randall
+  Date: September 24th, 2021
+  COMP229 Web App Development
+  Fall Semester
+-->
+
+<%- include ../partials/header.ejs %>
+
+  
+<%- include ../partials/main_nav.ejs %>
+  
+<%- include ../partials/title.ejs %>
+
+<!-- Home page content -->
+<div class="container" style="margin-top: 45px;">
+    <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Start Here
+        </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>Welcome to my portfolio!</strong> This is my web portfolio site built as part of Web Application Development course at Centennial College.  I am a second year student in my third semester of the Artificial Intelligence program.  I hope you enjoy your stay on my site!
+        </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            My Mission Statement
+        </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong><i>To always continue to learn and challenge myself, and be an inspiration to those around me.</i></strong>
+        </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Take a Look Around
+        </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>Stay a while</strong> You can find links on the nav bar above to the various sections of my site.  Or you can start here at my <a class="nav-link" aria-current="page" href="/about"> About Me Page</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>

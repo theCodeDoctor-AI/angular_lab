@@ -1,0 +1,36 @@
+/*
+    Custom css goes here
+*/
+
+/* For Profile Picture */
+.picture {
+    width: 400px;
+    height: 410px;
+    border-radius: 50%;
+}
+
+/* Carousel Pctures on the Projects Page */
+.carousel-picture {
+    border-radius: 25px;
+}
+
+/* Submit and Clear Buttons on the Contact Form */
+.button {
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    border-color: darkslategray;
+}
+
+/* Pictures for the Services Page */
+.service-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Background Image ** FIND A BETTER ONE LATER!! */
+.background-template {
+    background-image: url("../Assets/images/papers.co-si10-soft-blue-baby-gradation-blur-35-3840x2160-4k-wallpaper.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,115 @@
+<!--
+  Author: Mark Randall
+  Date: September 24th, 2021
+  COMP229 Web App Development
+  Fall Semester
+-->
+
+<%- include ../partials/header.ejs %>
+
+  
+<%- include ../partials/main_nav.ejs %>
+  
+<%- include ../partials/title.ejs %>
+
+<!-- Project page content -->
+<div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Assets/images/carousel_csharp.jpeg" class="d-block w-100 carousel-picture" alt="C# Project">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><span style="background-color: black; padding-left: 7px; padding-right: 7px; border-radius: 5px; box-shadow: 3px, 3px 3px, gray;">C# Assignment</span></h5>        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/images/carousel_javascript.jpeg" class="d-block w-100 carousel-picture" alt="JavaScript catch the imposters game">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><span style="background-color: black; padding-left: 7px; padding-right: 7px; border-radius: 5px; box-shadow: 3px, 3px 3px, gray;">Javascript and Canvas</span></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/images/carousel_web.jpeg" class="d-block w-100 carousel-picture" alt="Mock Real Estate Page">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><span style="background-color: rgb(49, 49, 49); padding-left: 7px; padding-right: 7px; border-radius: 5px; box-shadow: 3px, 3px 3px, gray;">Web Design</span></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/images/carousel_python.jpeg" class="d-block w-100 carousel-picture" alt="python search algorithm">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><span style="background-color: rgb(49, 49, 49); padding-left: 7px; padding-right: 7px; border-radius: 5px; box-shadow: 3px, 3px 3px, gray;">Python Search Algorithm</span></h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light px-3 container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">C# Assignment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Js and Canvas</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading1">C# Assignment</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading2">Js and Canvas</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Web Design</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Python Search Algorithm</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example container fs-5" tabindex="0">
+    <h4 id="scrollspyHeading1">C# Assignment</h4>
+    <p>This was one of my favorite assignments so far, and was built in my second semester.  
+        <br>It was first assigned as the thrid assignment and it consisted of a multi-form GUI program that would load in team and player data via a JSON file and then would allow the user to trade players from team to team.  
+        <br><br>It was fun learning how to program a GUI and learn how to handle excpetions in such an environment
+        <br>It was then re-assigned as assignment number 4 with added features to allow for adding new teams and players and also generating seasons of matches based on predetermined rules
+    </p>
+    <br>
+    <h4 id="scrollspyHeading2">Javascript and Cavas</h4>
+    <p>This was an assignment from second semester in the Client-Side Development course.  
+        <br>This was a particularly fun assignment as it was cool learning how to work with canvas in Javascript
+        <br><br>It was also a great chance to have some fun with an assignment and I love the imposters video game so it was a good fit
+        <br>If you would like to give it a try click <a href="http://studentweb.cencol.ca/mranda10/Comp125/Assignment5/Assignment5/Assignment5.html" target="blank">here</a>
+    </p>
+    <br>
+    <h4 id="scrollspyHeading3">Web Design</h4>
+    <p>This was the final project in first semester for the Web Design course
+        <br>This assignment, looking back on it now is relatively simple.
+        <br>No Javascript, no bells and whistles, no functionality at all really... Just HTML and CSS
+        <br><br>I included it because that was the best piece of anything I made in first semester.
+        <br>If you would like to get a look at the rest of the site and even check out some of my other earlier work please click <a href="http://studentweb.cencol.ca/mranda10/Project/template.html" target="blank">here</a>
+    </p>
+    <br>
+    <h4 id="scrollspyHeading4">Python Search Algorithm</h4>
+    <p>This was just an exercise I did for fun while working through a book chapter in the A.I. textbook
+        <br>It is a very basic example of a breadth-first search algorithm, with no cost for actions, in which the program attempts to find its way through a constructed mocked up floor plan
+        <br>The starting point is the bus stop and the goal state is the A.I. Lab. You can see the route it chose in the console window in the picture.
+        <br>It is my first course in A.I. and we are still learning the basics so I intend to add more complex projects here as the semester rolls on
+        <br>I also plan to make a github repo with all my A.I. work and will link it here when ready!
+    </p>
+  </div>
+
+<br><br><br><br>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>
