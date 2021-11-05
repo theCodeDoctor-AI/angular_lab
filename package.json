@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2021-wk3",
+  "name": "sports",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -30,18 +30,6 @@
     "passport-local-mongoose": "^6.1.0",
     "popper.js": "^1.16.1"
   },
-  "description": "demo app for week3",
-  "main": "./server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theCodeDoctor-AI/COMP229-F2021-Wk3.git"
-  },
-  "author": "Mark Randall",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/theCodeDoctor-AI/COMP229-F2021-Wk3/issues"
-  },
-  "homepage": "https://github.com/theCodeDoctor-AI/COMP229-F2021-Wk3#readme",
   "devDependencies": {
     "@types/connect-flash": "^0.0.37",
     "@types/cors": "^2.8.12",
@@ -53,5 +41,17 @@
     "@types/passport-jwt": "^3.0.6",
     "@types/passport-local": "^1.0.34",
     "@types/passport-local-mongoose": "^6.1.0"
-  }
+  },
+  "description": "Building off a previously built, backend only, portfolio site, this project will add a front end API using Angular.\r The original site was built using Express and Node, and included MongoDB Atlas access, and is currently in a separate repo.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theCodeDoctor-AI/angular_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theCodeDoctor-AI/angular_lab/issues"
+  },
+  "homepage": "https://github.com/theCodeDoctor-AI/angular_lab#readme"
 }
